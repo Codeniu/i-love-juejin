@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "dev": "coffee --watch --compile --output demo/ src/",
+        "build": "coffee --compile --output demo/ src/"
+    },
+    "dependencies": {
+        "coffee-script": "^1.12.7"
+    }
+}
