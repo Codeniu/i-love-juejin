@@ -1,6 +1,6 @@
 styles = """
-/* 
- * Paint A Littel Heart For You v1.0.0
+/*  
+ * I ❤ JUEJIN
  * Authored by codeniu
  */
 
@@ -12,55 +12,42 @@ styles = """
  */
 
 body {
-  font-size: 14px; line-height: 1.4;
-  background-color: #1a1c24; 
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #1a1c24;
 
-  /* 字变成白色吧 */
-  color: #fff;
-}
-
-/* ...                  
- *
- * ...你好啊           
- *
- * 是我, 小牛.         
- *
- * 我现在正在敲代码.            
- *
- * 是的，正如你现在看到的样子.                       
- *
- *
- * 这些CSS代码将会自动注入到style标签中
- * 在每行代码写下时你将会看到它带来的效果
- *
- */
-
-pre { 
-  /* 创建一个放代码的地方吧 */
-
-  position: fixed; width: 48%;
-  top: 30px; bottom: 30px; left: 26%;
-  transition: left 1000ms;
-  overflow: auto;
-
-  /* 加个颜色 */
-
-  background-color: #313744; color: #a6c3d4;
-  
-  /* 加个边框 */
-
-  border: 1px solid rgba(0,0,0,0.2);
-  padding: 24px 12px;
-  box-sizing: border-box;
-
-  /* 加个圆角 */
-
-  border-radius: 3px;
-  box-shadow: 0px 4px 0px 2px rgba(0,0,0,0.1);
+    /* 字变成白色吧 */
+    color: #fff;
 }
 
 
+pre {
+/* 创建一个放代码的地方吧 */
 
+    position: fixed;
+    width: 48%;
+    top: 30px;
+    bottom: 30px;
+    left: 26%;
+    transition: left 1000ms;
+    overflow: auto;
+
+/* 加个颜色 */
+
+    background-color: #313744;
+    color: #a6c3d4;
+
+/* 加个边框 */
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 24px 12px;
+    box-sizing: border-box;
+
+/* 加个圆角 */
+
+    border-radius: 3px;
+    box-shadow: 0px 4px 0px 2px rgba(0, 0, 0, 0.1);
+}
 
 /*
  * ...呃
@@ -71,9 +58,10 @@ pre {
  *
  */
 
-body{
-  font-size: 24px; line-height: 1.4;
-  -webkit-font-smoothing: subpixel-antialiased;
+body {
+    font-size: 24px;
+    line-height: 1.4;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* 
@@ -81,100 +69,90 @@ body{
  * 来点颜色吧
  */
 
-pre em:not(.comment) { font-style: normal; }
+pre em:not(.comment) {
+    font-style: normal;
+}
 
-.comment       { color: #707e84; }
-.selector      { color: #c66c75; }
-.selector .key { color: #c66c75; }
-.key           { color: #c7ccd4; }
-.value         { color: #d5927b; }
-
-/* 
- * 让我们来画一颗小心心 ♥
- */ 
-
+.comment {
+    color: #707e84;
+}
+.selector {
+    color: #c66c75;
+}
+.selector .key {
+    color: #c66c75;
+}
+.key {
+    color: #c7ccd4;
+}
+.value {
+    color: #d5927b;
+}
 
 /* 先把这些碍眼的代码扔到左边 */
 
-pre { left: 50%; }
+pre {
+    left: 50%;
+}
 
 /* 现在顺眼多了 */
 
-/* 先定个位 */
+/* 写个I字 */ 
 
-#heart, #echo { 
-  position: fixed;
-  width: 300px; height: 300px;
-  top: calc(50% - 150px); left: calc(25% - 150px);
-  text-align: center;
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+#chari::before{
+    content: "I";
+    font-size: 68px;
+    font-weight: bold;
+    /* 掏空 */
+    -webkit-text-stroke: 1px #1e80ff;
+    -webkit-text-fill-color: transparent;
 }
 
-#heart { z-index: 8; }
-#echo  { z-index: 7; }
+#chari { 
+    position: fixed;
+    width: 300px; height: 300px;
+    line-height: 300px;
+    top: calc(50% - 150px); 
+    left: 5%
+}
 
-/* 画一半出来 */
+/* ♥♥ */
+#heart::before{
+    content: "❤";
+    font-size: 68px;
+    font-weight: bold;
+    /* bling bling */
+    text-shadow: 0 0 10px red,0 0 20px red,0 0 30px red,0 0 40px red;
+}
 
-#heart::before, #heart::after, #echo::before, #echo::after {
-    content: '';
+#heart { 
+    position: fixed;
+    width: 300px; height: 300px;
+    line-height: 300px;
+    top: calc(50% - 150px); 
+    left: 7%
+}
+
+
+/* 写下JUEJIN */
+#juejin::before{
+    content: 'JUEJIN';
     position: absolute;
-    top: 40px;
-    width: 150px; height: 240px;
-    background: #c66c75;
-    border-radius: 150px 150px 0 0;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-            transform-origin: 0 100%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    text-shadow: -1px -1px 0px rgba(30, 128, 255,0.2);
 }
 
-#heart::before, #echo::before {
-  left: 150px;
+#juejin { 
+    position: fixed;
+    width: 300px; height: 300px;
+    line-height: 300px;
+    top: calc(50% - 150px); 
+    left: 12%;
 }
 
-/* 复制另一半出来 */
-
-#heart::after, #echo::after {
-  left: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-}
-
-/* 加一丢丢阴影  */
-
-#heart::after { 
-  box-shadow:
-    inset -6px -6px 0px 6px rgba(255,255,255,0.1);
-}
-
-#heart::before { 
-  box-shadow:
-    inset 6px 6px 0px 6px rgba(255,255,255,0.1);
-}
-
-/* 加上一丢丢可爱 */
-
-#heart i::before {
-  content: 'LYT';
-  position: absolute;
-  z-index: 9;
-  width: 100%;
-  top: 35%; left: 0;
-  font-style: normal;
-  color: rgba(255,255,255,0.8);
-  font-weight: 100;
-  font-size: 30px;
-  text-shadow: -1px -1px 0px rgba(0,0,0,0.2);
-}
-
-
-/* 
- * 现在让它砰砰砰起来. 
- */
-
+/* 自己动  */
 @-webkit-keyframes heartbeat {
   0%, 100% { 
     -webkit-transform: scale(0.95); 
@@ -191,92 +169,63 @@ pre { left: 50%; }
   50%      { transform: scale(1.00); }
 }
 
-@-webkit-keyframes echo {
-  0%   { 
-    opacity: 0.1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% { 
-    opacity: 0;
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-}
 
-@keyframes echo {
-  0%   { 
-    opacity: 0.1;
-    transform: scale(1);
-  }
-  100% { 
-    opacity: 0;
-    transform: scale(1.4);
-  }
-}
-
-
-/* 
- * Beautiful! 现在可以砰了...
- */
-
-#heart, #echo {
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-timing-function: 
+#heart {
+    -webkit-animation-duration: 2000ms;
+            animation-duration: 2000ms;
+    -webkit-animation-timing-function: 
     cubic-bezier(0, 0, 0, 1.74);
-          animation-timing-function: 
+            animation-timing-function: 
             cubic-bezier(0, 0, 0, 1.74);
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+/* 你相信光吗 */
+@-webkit-keyframes Glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+        0 0 40px #00a67c, 0 0 70px #00a67c, 0 0 80px #00a67c,
+        0 0 100px #00a67c, 0 0 150px #00a67c;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+        0 0 20px #00a67c, 0 0 35px #00a67c, 0 0 40px #00a67c,
+        0 0 50px #00a67c, 0 0 75px #00a67c;
+    }
+}
+@keyframes Glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+        0 0 40px #00a67c, 0 0 70px #00a67c, 0 0 80px #00a67c,
+        0 0 100px #00a67c, 0 0 150px #00a67c;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+        0 0 20px #00a67c, 0 0 35px #00a67c, 0 0 40px #00a67c,
+        0 0 50px #00a67c, 0 0 75px #00a67c;
+    }
 }
 
 #heart { 
-  -webkit-animation-name: heartbeat; 
-          animation-name: heartbeat; 
-}
-#echo { 
-  -webkit-animation-name: echo; 
-          animation-name: echo; 
+    -webkit-animation-name: Glow; 
+          animation-name: Glow; 
 }
 
-
-/* 
- * 准备...           
- */
-
-#heart, #echo {
-
-/* 
- * ...3...          
- */
-  
+#heart {
   -webkit-animation-play-state: running;
-          animation-play-state: running;
-  
-/* 
- * ...砰!        
- */
-  
+          animation-play-state: running;  
 }
 
-/* 
- *
- * 祝你今天开心，
- * 明日份的开心我等到明天再说         
- *  
- */
+/* 现在把鼠标移动到文字上 bling bling */
+#chari,#juejin:hover{
+	-webkit-animation: Glow 0.5s ease infinite alternate;
+    animation: Glow 0.5s ease infinite alternate;
+}
 
-
-/* 
- *
- * 看2min吧        
- *  
- */
 
 """
 
@@ -314,32 +263,15 @@ writeStyles = (message, index, interval) ->
     ), interval
     
 
-# appending the tags I'll need.
+# 添加需要的标签
 $('body').append """
-  <style id="style-tag"></style>
-	<span id="echo"></span>
+    <style id="style-tag"></style>
+    <span id="chari"></span>
 	<span id="heart"><i></i></span>
+    <span id="juejin"></span>
 	<pre id="style-text"></pre>
 """
 
-# faster typing in small iframe on codepen homepage
 time = if window.innerWidth <= 578 then 10 else 20
   
-# starting it off
 writeStyles(styles, 0, time)
-
-###
-Changelog:
-1.0.0: i exist!
-1.0.1: heart instead of circle
-1.0.2: including standard CSS3 transforms and animations
-	was only using `-webkit` to be less verbose (standard transforms dont work in safari)
-	now works in FF
-1.0.3: crossbrowser echo 
-	nested `scale()` styles (scaled in scaled) only worked in chrome
-	moved echo out of heart to fix
-1.0.4: more efficient animations
-	`0%, 100% {}` instead of duplicated keyframes
-1.0.5: overflwo fix
-  `overflow: auto` on the `pre`
-###
