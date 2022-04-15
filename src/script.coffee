@@ -22,8 +22,7 @@ body {
 
 
 pre {
-/* 创建一个放代码的地方吧 */
-
+    /* 创建一个放代码的地方吧 */
     position: fixed;
     width: 48%;
     top: 30px;
@@ -32,18 +31,17 @@ pre {
     transition: left 1000ms;
     overflow: auto;
 
-/* 加个颜色 */
-
+    /* 加个颜色 */
     background-color: #313744;
     color: #a6c3d4;
 
-/* 加个边框 */
+    /* 加个边框 */
 
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 24px 12px;
     box-sizing: border-box;
 
-/* 加个圆角 */
+    /* 加个圆角 */
 
     border-radius: 3px;
     box-shadow: 0px 4px 0px 2px rgba(0, 0, 0, 0.1);
@@ -110,8 +108,6 @@ pre {
 
 #chari { 
     position: fixed;
-    width: 300px; height: 300px;
-    line-height: 300px;
     top: calc(50% - 150px); 
     left: 5%
 }
@@ -127,8 +123,6 @@ pre {
 
 #heart { 
     position: fixed;
-    width: 300px; height: 300px;
-    line-height: 300px;
     top: calc(50% - 150px); 
     left: 7%
 }
@@ -146,8 +140,6 @@ pre {
 
 #juejin { 
     position: fixed;
-    width: 300px; height: 300px;
-    line-height: 300px;
     top: calc(50% - 150px); 
     left: 12%;
 }
@@ -211,8 +203,8 @@ pre {
 }
 
 #heart { 
-    -webkit-animation-name: Glow; 
-          animation-name: Glow; 
+    -webkit-animation-name: heartbeat; 
+          animation-name: heartbeat; 
 }
 
 #heart {
@@ -220,7 +212,7 @@ pre {
           animation-play-state: running;  
 }
 
-/* 现在把鼠标移动到文字上 bling bling */
+/* bling bling */
 #chari,#juejin:hover{
 	-webkit-animation: Glow 0.5s ease infinite alternate;
     animation: Glow 0.5s ease infinite alternate;
