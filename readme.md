@@ -9,3 +9,7 @@ pnpm dev
 ```
 
 Then open demo/index.html in broswer, enjoy it! 
+
+## 预览
+
+https://codeniu.github.io/i-love-juejin/demo/index.html
